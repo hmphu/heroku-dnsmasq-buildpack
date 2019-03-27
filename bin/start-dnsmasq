@@ -57,7 +57,7 @@ echo 'buildpack=dnsmasq at=logs-initialized'
   # We expect dnsmasq to run in foreground.
   # We also expect a socket to be at /tmp/dnsmasq.socket.
   echo 'buildpack=dnsmasq at=dnsmasq-start'
-  bin/dnsmasq dnsmasq -S /onprem.org/10.10.10.10
+  bin/dnsmasq dnsmasq -S /.ximalaya.com/127.0.0.1
   echo 'dnsmasq' >$psmgr
 ) &
 
